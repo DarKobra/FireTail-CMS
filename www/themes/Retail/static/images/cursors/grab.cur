@@ -1,0 +1,581 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-es">
+<head>
+<title>World of Warcraft</title>
+<meta content="false" http-equiv="imagetoolbar" />
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+<link rel="shortcut icon" href="/wow/static/local-common/images/favicons/wow.ico" type="image/x-icon"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://eu.battle.net/es-es/data/opensearch" title="Búsqueda eb Battle.net" />
+<link rel="stylesheet" type="text/css" media="all" href="/wow/static/local-common/css/common.css?v37" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" media="all" href="/wow/static/local-common/css/common-ie.css?v37" />
+<![endif]-->
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="all" href="/wow/static/local-common/css/common-ie6.css?v37" />
+<![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="all" href="/wow/static/local-common/css/common-ie7.css?v37" />
+<![endif]-->
+<link title="World of Warcraft - Noticias" href="/wow/feed/news" type="application/atom+xml" rel="alternate"/>
+<link rel="stylesheet" type="text/css" media="all" href="/wow/static/css/wow.css?v19" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" media="all" href="/wow/static/css/wow-ie.css?v19" />
+<![endif]-->
+<!--[if IE 6]> <link rel="stylesheet" type="text/css" media="all" href="/wow/static/css/wow-ie6.css?v19" />
+<![endif]-->
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" media="all" href="/wow/static/css/wow-ie7.css?v19" />
+<![endif]-->
+<link rel="stylesheet" type="text/css" media="all" href="/wow/static/local-common/css/locale/es-es.css?v37" />
+<link rel="stylesheet" type="text/css" media="all" href="/wow/static/css/locale/es-es.css?v19" />
+<script type="text/javascript" src="/wow/static/local-common/js/third-party/jquery.js?v37"></script>
+<script type="text/javascript" src="/wow/static/local-common/js/core.js?v37"></script>
+<script type="text/javascript" src="/wow/static/local-common/js/tooltip.js?v37"></script>
+<!--[if IE 6]> <script type="text/javascript">
+//<![CDATA[
+try { document.execCommand('BackgroundImageCache', false, true) } catch(e) {}
+//]]>
+</script>
+<![endif]-->
+<script type="text/javascript">
+//<![CDATA[
+Core.staticUrl = '/wow/static';
+Core.sharedStaticUrl= '/wow/static/local-common';
+Core.baseUrl = '/wow';
+Core.projectUrl = '/wow';
+Core.cdnUrl = 'http://eu.media.blizzard.com';
+Core.supportUrl = 'http://eu.battle.net/support/';
+Core.secureSupportUrl= 'https://eu.battle.net/support/';
+Core.project = 'wow';
+Core.locale = 'es-es';
+Core.language = 'es';
+Core.buildRegion = 'eu';
+Core.region = 'eu';
+Core.shortDateFormat= 'dd/MM/yyyy';
+Core.dateTimeFormat = 'dd/MM/yyyy HH:mm';
+Core.loggedIn = false;
+Flash.videoPlayer = 'http://eu.media.blizzard.com/global-video-player/themes/wow/video-player.swf';
+Flash.videoBase = 'http://eu.media.blizzard.com/wow/media/videos';
+Flash.ratingImage = 'http://eu.media.blizzard.com/global-video-player/ratings/wow/es-es.jpg';
+Flash.expressInstall= 'http://eu.media.blizzard.com/global-video-player/expressInstall.swf';
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-544112-16']);
+_gaq.push(['_setDomainName', '.battle.net']);
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageLoadTime']);
+//]]>
+</script>
+</head>
+<body class="es-es server-error">
+
+<div id="wrapper">
+<div id="header">
+<div class="search-bar">
+<form action="/wow/search" method="get" autocomplete="off">
+<div>
+<input type="text" class="search-field input" name="q" id="search-field" maxlength="200" tabindex="40" alt="Busca personajes, objetos, foros, y más… " value="Busca personajes, objetos, foros, y más… " />
+<input type="submit" class="search-button" value="" tabindex="41" />
+</div>
+</form>
+</div>
+<h1 id="logo"><a href="/wow/">World of Warcraft</a></h1>
+<div class="header-plate">
+<ul class="menu" id="menu">
+<li class="menu-home">
+<a href="/wow/">
+<span>Inicio</span>
+</a>
+</li>
+<li class="menu-game">
+<a href="/wow/game/">
+<span>Juego</span>
+</a>
+</li>
+<li class="menu-community">
+<a href="/wow/community/">
+<span>Comunidad</span>
+</a>
+</li>
+<li class="menu-media">
+<a href="/wow/media/">
+<span>Medios</span>
+</a>
+</li>
+<li class="menu-forums">
+<a href="/wow/forum/">
+<span>Foros</span>
+</a>
+</li>
+<li class="menu-services">
+<a href="/wow/services/">
+<span>Servicios</span>
+</a>
+</li>
+</ul>
+<div class="user-plate">
+<a href="?login" class="card-login"
+onclick="BnetAds.trackImpression('Battle.net Login', 'Character Card', 'New'); return Login.open('https://eu.battle.net/login/login.frag');">
+¡<strong>Inicia sesión</strong> para mejorar y personalizar tu experiencia!
+</a>
+<div class="card-overlay"></div>
+</div>
+</div>
+<div class="new-feature-tip" id="feature-tip" style="display: none">
+<a href="/wow/game/mists-of-pandaria/feature/talent-calculator" data-label="Mists of Pandaria" class="clickable">
+<span class="title">Mists of Pandaria</span>
+<strong>Calculadora de talentos</strong>
+<span class="desc">¡Prueba el próximo sistema de talentos y danos tu opinión!</span>
+</a>
+<a href="javascript:;" class="close" rel="close" data-label="Close"></a>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+Core.showUntilClosed('#feature-tip', 'mop.talent.calculator', {
+endDate: '2011/12/14',
+cookieParams: { expires: 720 }
+});
+//]]>
+</script>
+</div>
+<div id="content">
+<div class="content-top">
+<div class="content-trail">
+<ol class="ui-breadcrumb">
+<li class="last">
+<a href="/wow/" rel="np">
+World of Warcraft
+</a>
+</li>
+</ol>
+</div>
+<div class="content-bot">
+	<div id="server-error">
+		<h2 class="http">El Agente 404…</h2>
+		<h3>ha robado esta página</h3>
+
+		<p>Solía haber<br /> una <strong>PÁGINA</strong><br /> aquí,<br />pero ahora ha desaparecido.<br /><br /><em>(¿Esto es lo que pasa cuando te metes con este agente especial?)</em></p>
+
+
+		<!-- http : 404 -->
+	</div>
+	
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="sitemap" class="promotions">
+<div class="column">
+<h3 class="bnet">
+<a href="http://eu.battle.net/" tabindex="100">Battle.net</a>
+</h3>
+<ul>
+<li><a href="http://eu.battle.net/what-is/">¿Qué es Battle.net?</a></li>
+<li><a href="https://eu.battle.net/account/management/get-a-game.html">Adquirir juegos</a></li>
+<li><a href="https://eu.battle.net/account/management/">Cuenta</a></li>
+<li><a href="http://eu.blizzard.com/support/">Asistencia</a></li>
+<li><a href="http://eu.battle.net/realid/">ID Real</a></li>
+</ul>
+</div>
+<div class="column">
+<h3 class="games">
+<a href="http://eu.battle.net/" tabindex="100">Juegos</a>
+</h3>
+<ul>
+<li><a href="http://eu.battle.net/sc2/">StarCraft II</a></li>
+<li><a href="http://eu.battle.net/wow/">World of Warcraft</a></li>
+<li><a href="http://eu.battle.net/d3/">Diablo III</a></li>
+<li><a href="http://eu.battle.net/games/classic">Juegos clásicos</a></li>
+<li><a href="https://eu.battle.net/account/download/">Descarga de juegos</a></li>
+</ul>
+</div>
+<div class="column">
+<h3 class="account">
+<a href="https://eu.battle.net/account/management/" tabindex="100">Cuenta</a>
+</h3>
+<ul>
+<li><a href="https://eu.battle.net/account/support/login-support.html">¿No puedes iniciar sesión?</a></li>
+<li><a href="https://eu.battle.net/account/creation/tos.html">Crear cuenta</a></li>
+<li><a href="https://eu.battle.net/account/management/">Resumen de cuenta</a></li>
+<li><a href="https://eu.battle.net/account/management/authenticator.html">Seguridad de cuentas</a></li>
+<li><a href="https://eu.battle.net/account/management/add-game.html">Añadir juego</a></li>
+<li><a href="https://eu.battle.net/account/management/redemption/redeem.html">Canjear código de promoción</a></li>
+</ul>
+</div>
+<div class="column">
+<h3 class="support">
+<a href="http://eu.blizzard.com/support/" tabindex="100">Asistencia</a>
+</h3>
+<ul>
+<li><a href="http://eu.blizzard.com/support/">Artículos de asistencia</a></li>
+<li><a href="https://eu.battle.net/account/parental-controls/index.html">Control paterno</a></li>
+<li><a href="http://eu.battle.net/security/">Protege tu cuenta</a></li>
+<li><a href="http://eu.battle.net/security/help">¡Ayuda, me han pirateado!</a></li>
+</ul>
+</div>
+<div id="footer-promotions">
+<div class="sidebar-content"></div>
+<div id="sidebar-marketing" class="sidebar-module">
+<div class="bnet-offer">
+<!-- -->
+<div class="bnet-offer-bg">
+<a href="https://eu.battle.net/account/creation/wow/signup/index.xml?locale=es_ES" target="_blank" id="ad3365013" class="bnet-offer-image" onclick="BnetAds.trackEvent('3365013', 'Trial-EU', 'wow', true);">
+<img src="http://eu.media2.battle.net/cms/ad_300x100/VVA8JSH7PAW11317209902212.jpg" width="300" height="100" alt=""/>
+</a>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+if(typeof (BnetAds.addEvent) != "undefined" )
+BnetAds.addEvent(window, 'load', function(){ BnetAds.trackEvent('3365013', 'Trial-EU', 'wow'); } );
+else
+BnetAds.trackEvent('3365013', 'Trial-EU', 'wow');
+//]]>
+</script>
+</div>
+</div>
+</div>
+<span class="clear"><!-- --></span>
+</div>
+<div id="copyright">
+<a href="javascript:;" tabindex="100" id="change-language">
+<span>Europa - Español (EU)</span>
+</a>
+©2011 Blizzard Entertainment, Inc. Todos los derechos reservados
+<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/about/termsofuse.html" tabindex="100">Condiciones de Uso</a>
+<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/legal/" tabindex="100">Legal</a>
+<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/about/privacy.html" tabindex="100">Protección de datos</a>
+<a onclick="return Core.open(this);" href="http://eu.blizzard.com/company/about/infringementnotice.html" tabindex="100">Derechos de autor</a>
+</div>
+<div id="international"></div>
+<div id="legal">
+<div id="legal-ratings" class="png-fix">
+<a href="http://www.pegi.info/" onclick="return Core.open(this);">
+<img class="legal-image" alt="" src="/wow/static/local-common/images/legal/eu/pegi-wow.png" />
+</a>
+</div>
+<div id="blizzard" class="png-fix">
+<a href="http://blizzard.com" tabindex="100"><img src="/wow/static/local-common/images/logos/blizz-wow.png" alt="" /></a>
+</div>
+<span class="clear"><!-- --></span>
+</div>
+</div>
+<div id="service">
+<ul class="service-bar">
+<li class="service-cell service-home"><a href="http://eu.battle.net/" tabindex="50" accesskey="1" title="Battle.net"> </a></li>
+<li class="service-cell service-welcome">
+<a href="?login" onclick="return Login.open()">Inicia sesión</a> o <a href="https://eu.battle.net/account/creation/tos.html">Crea una cuenta</a>
+</li>
+<li class="service-cell service-account"><a href="https://eu.battle.net/account/management/" class="service-link" tabindex="50" accesskey="3">Cuenta</a></li>
+<li class="service-cell service-support service-support-enhanced">
+<a href="#support" class="service-link service-link-dropdown" tabindex="50" accesskey="4" id="support-link" onclick="return false" style="cursor: progress" rel="javascript">Asistencia<span class="no-support-tickets" id="support-ticket-count"></span></a>
+<div class="support-menu" id="support-menu" style="display:none;">
+<div class="support-primary">
+<ul class="support-nav">
+<li>
+<a href="http://eu.blizzard.com/support/" tabindex="55" class="support-category">
+<strong class="support-caption">Artículos de asistencia</strong>
+Explorar base de datos
+</a>
+</li>
+<li>
+<a href="https://eu.battle.net/support/ticket/submit" tabindex="55" class="support-category">
+<strong class="support-caption">Hacer una pregunta</strong>
+Consigue ayuda de nuestros agentes
+</a>
+</li>
+<li>
+<a href="https://eu.battle.net/support/ticket/status" tabindex="55" class="support-category">
+<strong class="support-caption">Tus consultas</strong>
+Ver historial completo de tus consultas (debes iniciar sesión).
+</a>
+</li>
+</ul>
+<span class="clear"><!-- --></span>
+</div>
+<div class="support-secondary"></div>
+<!--[if IE 6]> <iframe id="support-shim" src="javascript:false;" frameborder="0" scrolling="no" style="display: block; position: absolute; top: 0; left: 9px; width: 297px; height: 400px; z-index: -1;"></iframe>
+<script type="text/javascript">
+//<![CDATA[
+(function(){
+var doc = document;
+var shim = doc.getElementById('support-shim');
+shim.style.filter = 'progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)';
+shim.style.display = 'block';
+})();
+//]]>
+</script>
+<![endif]-->
+</div>
+</li>
+<li class="service-cell service-explore">
+<a href="#explore" tabindex="50" accesskey="5" class="dropdown" id="explore-link" onclick="return false" style="cursor: progress" rel="javascript">Explorar</a>
+<div class="explore-menu" id="explore-menu" style="display:none;">
+<div class="explore-primary">
+<ul class="explore-nav">
+<li>
+<a href="http://eu.battle.net/" tabindex="55" data-label="Home">
+<strong class="explore-caption">Battle.net</strong>
+Conecta. Juega. Une.
+</a>
+</li>
+<li>
+<a href="https://eu.battle.net/account/management/" tabindex="55" data-label="Account">
+<strong class="explore-caption">Cuenta</strong>
+Gestiona tu cuenta
+</a>
+</li>
+<li>
+<a href="http://eu.blizzard.com/support/" tabindex="55" data-label="Support">
+<strong class="explore-caption">Asistencia</strong>
+Consigue asistencia
+</a>
+</li>
+<li>
+<a href="https://eu.battle.net/account/management/get-a-game.html" tabindex="55" data-label="Buy Games">
+<strong class="explore-caption">Comprar juegos</strong>
+Juegos en soporte digital para descargar
+</a>
+</li>
+</ul>
+<div class="explore-links">
+<h2 class="explore-caption">Más</h2>
+<ul>
+<li><a href="http://eu.battle.net/what-is/" tabindex="55" data-label="More">¿Qué es Battle.net?</a></li>
+<li><a href="http://eu.battle.net/realid/" tabindex="55" data-label="More">¿Qué es ID Real?</a></li>
+<li><a href="https://eu.battle.net/account/parental-controls/index.html" tabindex="55" data-label="More">Control paterno</a></li>
+<li><a href="http://eu.battle.net/security/" tabindex="55" data-label="More">Seguridad de cuentas</a></li>
+<li><a href="http://eu.battle.net/games/classic" tabindex="55" data-label="More">Juegos clásicos</a></li>
+<li><a href="https://eu.battle.net/account/support/index.html" tabindex="55" data-label="More">Asistencia de cuentas</a></li>
+</ul>
+</div>
+<span class="clear"><!-- --></span>
+<!--[if IE 6]> <iframe id="explore-shim" src="javascript:false;" frameborder="0" scrolling="no" style="display: block; position: absolute; top: 0; left: 9px; width: 409px; height: 400px; z-index: -1;"></iframe>
+<script type="text/javascript">
+//<![CDATA[
+(function(){
+var doc = document;
+var shim = doc.getElementById('explore-shim');
+shim.style.filter = 'progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0)';
+shim.style.display = 'block';
+})();
+//]]>
+</script>
+<![endif]-->
+</div>
+<ul class="explore-secondary">
+<li class="explore-game explore-game-sc2">
+<a href="http://eu.battle.net/sc2/" tabindex="55" data-label="Game - sc2">
+<span class="explore-game-inner">
+<strong class="explore-caption">StarCraft II</strong>
+<span>Noticias y Foros</span> <span>Guía para principiantes</span> <span>Perfil de jugador</span> <span>…</span>
+</span>
+</a>
+</li>
+<li class="explore-game explore-game-wow">
+<a href="http://eu.battle.net/wow/" tabindex="55" data-label="Game - wow">
+<span class="explore-game-inner">
+<strong class="explore-caption">World of Warcraft</strong>
+<span>Perfil de personaje</span> <span>Noticias y Foros</span> <span>Guía de juego</span> <span>…</span>
+</span>
+</a>
+</li>
+<li class="explore-game explore-game-d3">
+<a href="http://eu.battle.net/d3/" tabindex="55" data-label="Game - d3">
+<span class="explore-game-inner">
+<strong class="explore-caption">Diablo III</strong>
+<span>Guía de juego</span> <span>Noticias sobre la beta</span> <span>Foros</span> <span>…</span>
+</span>
+</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<div id="warnings-wrapper">
+<script type="text/javascript">
+//<![CDATA[
+$(function() {
+App.saveCookie('html5Warning');
+App.resetCookie('browserWarning');
+});
+//]]>
+</script>
+<!--[if lt IE 8]> <div id="browser-warning" class="warning warning-red">
+<div class="warning-inner2">
+No estás utilizando la última versión de tu navegador.<br />
+<a href="http://eu.blizzard.com/support/article/browserupdate">Actualizar</a> o <a href="http://www.google.com/chromeframe/?hl=es-ES" id="chrome-frame-link">instalar Google Chrome Frame</a>.
+<a href="#close" class="warning-close" onclick="App.closeWarning('#browser-warning', 'browserWarning'); return false;"></a>
+</div>
+</div>
+<![endif]-->
+<!--[if lt IE 8]> <script type="text/javascript" src="/wow/static/local-common/js/third-party/CFInstall.min.js?v37"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(function() {
+var age = 365 * 24 * 60 * 60 * 1000;
+var src = 'https://www.google.com/chromeframe/?hl=es-ES';
+if ('http:' == document.location.protocol) {
+src = 'http://www.google.com/chromeframe/?hl=es-ES';
+}
+document.cookie = "disableGCFCheck=0;path=/;max-age="+age;
+$('#chrome-frame-link').bind({
+'click': function() {
+App.closeWarning('#browser-warning');
+CFInstall.check({
+mode: 'overlay',
+url: src
+});
+return false;
+}
+});
+});
+//]]>
+</script>
+<![endif]-->
+<noscript>
+<div id="javascript-warning" class="warning warning-red">
+<div class="warning-inner2">
+Debes tener activado JavaScript para utilizar esta página.
+</div>
+</div>
+</noscript>
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="/wow/static/local-common/js/search.js?v37"></script>
+<script type="text/javascript">
+//<![CDATA[
+var xsToken = '';
+var Msg = {
+support: {
+ticketNew: 'Se ha creado la consulta nº{0}.',
+ticketStatus: 'El estado de tu consulta nº{0} se ha cambiado a {1}.',
+ticketOpen: 'Abierta',
+ticketAnswered: 'Respondida',
+ticketResolved: 'Resuelta',
+ticketCanceled: 'Cancelada',
+ticketArchived: 'Archivado',
+ticketInfo: 'Se necesita más información',
+ticketAll: 'Ver todas las consultas'
+},
+cms: {
+requestError: 'Tu petición no puede ser llevada a cabo.',
+ignoreNot: 'No has bloqueado a este usuario.',
+ignoreAlready: 'Ya has bloqueado a este usuario.',
+stickyRequested: 'Realizada petición de adhesivo.',
+stickyHasBeenRequested: 'Ya has realizado una petición de adhesivo para este asunto.',
+postAdded: 'Comentario añadido al rastreador.',
+postRemoved: 'Comentario eliminado del rastreador.',
+userAdded: 'Usuario añadido al rastreador.',
+userRemoved: 'Usuario eliminado del rastreador.',
+validationError: 'Campo obligatorio sin cumplimentar.',
+characterExceed: 'El cuerpo del comentario supera los XXXXXX caracteres.',
+searchFor: "Buscar",
+searchTags: "Artículos etiquetados:",
+characterAjaxError: "Es posible que estés desconectado. Por favor, actualiza la página y vuelve a intentarlo.",
+ilvl: "Nivel {0}",
+shortQuery: "La búsqueda debe contener al menos 2 caracteres"
+},
+bml: {
+bold: 'Negrita',
+italics: 'Cursiva',
+underline: 'Subrayar',
+list: 'Lista sin orden',
+listItem: 'Lista enumerada',
+quote: 'Citar',
+quoteBy: 'Publicado por {0}',
+unformat: 'Elminar formato',
+cleanup: 'Corregir saltos de líneas',
+code: 'Bloques de código',
+item: 'Objeto de WoW',
+itemPrompt: 'Número de objeto:',
+url: 'URL',
+urlPrompt: 'Dirección de URL:'
+},
+ui: {
+submit: 'Enviar',
+cancel: 'Cancelar',
+reset: 'Restablecer',
+viewInGallery: 'Ver en galería',
+loading: 'Cargando…',
+unexpectedError: 'Se ha producido un error',
+fansiteFind: 'Buscar en…',
+fansiteFindType: 'Buscar {0} en…',
+fansiteNone: 'Ningún fansite disponible.'
+},
+grammar: {
+colon: '{0}:',
+first: 'Primera',
+last: 'Última'
+},
+fansite: {
+achievement: 'logro',
+character: 'personaje',
+faction: 'facción',
+'class': 'clase',
+object: 'objeto',
+talentcalc: 'talentos',
+skill: 'profesión',
+quest: 'misión',
+spell: 'hechizo',
+event: 'evento',
+title: 'título',
+arena: 'equipo de Arenas',
+guild: 'hermandad',
+zone: 'zona',
+item: 'objeto',
+race: 'raza',
+npc: 'PNJ',
+pet: 'mascota'
+},
+search: {
+kb: 'Asistencia',
+post: 'Foros',
+article: 'Artículos',
+static: 'Contenido',
+wowcharacter: 'Personaje',
+wowitem: 'Objeto',
+wowguild: 'Hermandades',
+wowarenateam: 'Equipos de Arenas',
+other: 'Otros'
+}
+};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+Core.load("/wow/static/local-common/js/third-party/jquery-ui-1.8.6.custom.min.js?v37");
+Core.load("/wow/static/local-common/js/login.js?v37", false, function() {
+Login.embeddedUrl = 'https://eu.battle.net/login/login.frag';
+});
+//]]>
+</script>
+<script type="text/javascript" src="/wow/static/local-common/js/menu.js?v37"></script>
+<script type="text/javascript" src="/wow/static/js/wow.js?v19"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(function() {
+Menu.initialize('/data/menu.json');
+});
+//]]>
+</script>
+<!--[if lt IE 8]> <script type="text/javascript" src="/wow/static/local-common/js/third-party/jquery.pngFix.pack.js?v37"></script>
+<script type="text/javascript">
+//<![CDATA[
+$('.png-fix').pngFix(); //]]>
+</script>
+<![endif]-->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+var ga = document.createElement('script');
+var src = "https://ssl.google-analytics.com/ga.js";
+if ('http:' == document.location.protocol) {
+src = "http://www.google-analytics.com/ga.js";
+}
+ga.type = 'text/javascript';
+ga.setAttribute('async', 'true');
+ga.src = src;
+var s = document.getElementsByTagName('script');
+s = s[s.length-1];
+s.parentNode.insertBefore(ga, s.nextSibling);
+})();
+//]]>
+</script>
+</body>
+</html>

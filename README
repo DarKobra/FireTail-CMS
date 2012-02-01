@@ -1,0 +1,8 @@
+DrakantasCMS
+Content Management System para Servidores Privados
+de World of Warcraft.
+Basado en: https://eu.battle.net/
+Creditos:
+- Blizzard    (Imagenes, CSS, HTML).
+- Drakantas   (Por Codificar este CMS en PHP usando CodeIgniter).
+- CodeIgniter (Framework de DrakantasCMS).

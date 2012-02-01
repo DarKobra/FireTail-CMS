@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+
+/* average item level */
+.summary-averageilvl .rest { text-transform:none; }
+
+.game-guide-what-is-wow .part1-div  p, .game-guide-what-is-wow .part2-div  p, .game-guide-what-is-wow .part3-div  p, .game-guide-what-is-wow .part4-div  p {line-height:18px;}
+.game-guide-what-is-wow .part3-desc02 .guide-detail-desc p, .game-guide-what-is-wow .part4-desc02  p, .game-guide-what-is-wow .part4-desc03  p {line-height:15px;}
+.game-guide-what-is-wow .part1-div  .part1-detail .role-playing {margin:26px 0 0 50px;}
+.game-guide-what-is-wow .part1-div  .part1-detail .online {margin:40px 50px 0 0;}
+
+
+.game-guide-getting-started .step1-div #interface-list {right:63px;}
+.game-guide-getting-started .step1-div  p, .game-guide-getting-started  .step2-div  p , .game-guide-getting-started  .step4-div  p {line-height:18px;}
+.game-guide-getting-started .sever-type-list {line-height:15px;}
+.game-guide-getting-started .step3-div  p {line-height:17px;}
+.game-guide-getting-started .step3-div  .content-col-right {line-height:13px;}
+.game-guide-getting-started .part1-div  .part1-detail .role-playing {margin:26px 0 0 50px;}
+.game-guide-getting-started .part1-div  .part1-detail .online {margin:0 50px 0 0;}
+.game-guide-getting-started .step1-div .raf-desc {margin-top:30px;}
+
+.game-guide-playing-together .chat-other .dialog, .game-guide-playing-together #friends .friends .box {line-height:15px;}
+.game-guide-playing-together #party .box, .game-guide-playing-together #friends .intro {line-height:19px;}
+
+/* character card */
+#header .user-plate .user-meta.meta-login { padding-right:20px; top:61px; }
+
+/* Free WoW for SC2 promo side banner */
+.promo.promo-free-wow .free-trial {  background-image: url("../../images/sidebar/free-wow-for-sc2/es-es.jpg") }
+
+/* Services WoW Remote page */
+.content-anchors-div .anchor-box .wrapper {min-height:129px;}
+
+/* wiki */
+.bosses .npcs a { width: 110px; padding: 0; }
+.bosses .npcs a .side-icon { right: 16px; }
+
+/*mists of pandaria*/
+#header .back-to-community a { background-image: url("../../images/game/mist-of-pandaria/locale/es-es/back-to-community.png") }
+.pandaria #menu,
+.pandaria-sub #menu,
+.pandaria #menu li a:hover,
+.pandaria-sub #menu li a:hover,
+.pandaria-sub-media #menu li a:hover,
+.pandaria #menu li a.menu-active,
+.pandaria-sub #menu li a.menu-active,
+.pandaria-sub-media #menu,
+.pandaria-sub-media #menu li a.menu-active { background-image:url("../../images/game/mist-of-pandaria/locale/es-es/bg-navi.jpg") }
+.pandaria .bottom .monk { background-image: url("../../images/game/mist-of-pandaria/locale/es-es/bg-main-feature.png") }
+.pandaria .bottom .pandaren { background-image:url("../../images/game/mist-of-pandaria/locale/es-es/bg-main-feature.png") }
+.pandaria .bottom .talent-calculator { background-image:url("../../images/game/mist-of-pandaria/locale/es-es/bg-main-feature.png") }
+
+
+.ie6 #header .back-to-community a { background-image: url("../../images/game/mist-of-pandaria/locale/es-es/back-to-community.gif") }
+
+.ie6 .pandaria .bottom .monk,
+.ie6 .pandaria .bottom .pandaren, .pandaria .bottom .pandaren,
+.ie6 .pandaria .bottom .talent-calculator { background-image:url("../../images/game/mist-of-pandaria/locale/es-es/bg-main-feature.gif") }
+
+/*facebook winback patch 4.3*/
+.facebook-winback-patch43 .wrapper{ background: url('../../images/gate/facebook-winback-patch43/es/background.jpg') top left no-repeat; width: 512px; height:1120px; margin:0; position: absolute; left: 0; }
+.facebook-winback-patch43 .header .return-free-content a.return-free-now{ background: url('../../images/gate/facebook-winback-patch43/es/return-free-now-button-hover.jpg') 0 60px no-repeat; }
+.facebook-winback-patch43 .header .return-free-content a.return-free-now{ margin: 0; }
