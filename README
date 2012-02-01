@@ -1,8 +1,21 @@
-DrakantasCMS
-Content Management System para Servidores Privados
-de World of Warcraft.
-Basado en: https://eu.battle.net/
-Creditos:
-- Blizzard    (Imagenes, CSS, HTML).
-- Drakantas   (Por Codificar este CMS en PHP usando CodeIgniter).
-- CodeIgniter (Framework de DrakantasCMS).
+﻿+****************************************************+
+|                    FireTail-CMS                    |
+|****************************************************|
+| Content Management System para Servidores Privados |
+| de World of Warcraft.                              |
+|*****************************************************
+|****************************************************|
+| Haciendo la vida de un Owner más facil.            |
+|*****************************************************
+| Basado en: http://us.battle.net/wow/               |
+| FrozenTeam:                                        |
+| - Asfo.                                            |
+| - Drakantas.                                       |
+| - GDW.                                             |
+| - Elcazademonios.                                  |
+| Créditos:                                          |
+| - Blizzard  (Imágenes, CSS, HTML, JS).             |
+| - FrozenTeam (Código, y algo más).                 |
+|****************************************************|
+|                    By FrozenTeam                   |
++****************************************************+
