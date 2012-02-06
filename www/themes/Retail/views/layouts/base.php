@@ -17,7 +17,7 @@ if (!defined('BASEPATH')) exit('No se permite el acceso a este script.');
 	<title><?php echo $template['title']; ?></title>
 	<?php echo $template['metadata']; ?>
 </head>
-<body class="es-es homepage">
+<body class="es-es <?php echo $pagina; ?>">
 
 <div id="wrapper">
 <div id="header">
@@ -30,7 +30,7 @@ if (!defined('BASEPATH')) exit('No se permite el acceso a este script.');
 </a>
 </li>
 <li class="menu-game">
-<a href="<?php echo $path; ?>/index.php/game">
+<a href="<?php echo $path; ?>/index.php/server">
 <span>Juego</span>
 </a>
 </li>
@@ -128,7 +128,7 @@ onclick="BnetAds.trackImpression(\'Battle.net Login\', \'Character Card\', \'New
 		echo sprintf('
 		<div class="bnet-offer-bg">
 				<a href="'.$announce_item['link'].'" target="_blank" id="'.$announce_item['id'].'" class="bnet-offer-image">
-				<img src="'.APPPATH.'themes/'.$theme.'/static/images/cms/ad_300x100/'.$announce_item['imagen'].'.jpg" width="300" height="100" alt=""/>
+				<img src="'.$path.'/'.APPPATH.'themes/'.$theme.'/static/images/cms/ad_300x100/'.$announce_item['imagen'].'.jpg" width="300" height="100" alt=""/>
 			</a>
 		</div>'); endforeach; ?>
 </div>
@@ -461,11 +461,11 @@ onclick="BnetAds.trackImpression(\'Battle.net Login\', \'Character Card\', \'New
 <div id="legal">
 <div id="legal-ratings" class="png-fix">
 <a href="http://www.pegi.info/" onClick="return Core.open(this);">
-<img class="legal-image" alt="" src="<?php echo APPPATH; ?>/themes/retail/static/local-common/images/legal/eu/pegi-wow.png" />
+<img class="legal-image" alt="" src="<?php echo ''.$path.'/'.APPPATH.'/themes/'.$theme.''; ?>/static/local-common/images/legal/eu/pegi-wow.png" />
 </a>
 </div>
 <div id="blizzard" class="png-fix">
-<a href="http://blizzard.com/" tabindex="100"><img src="<?php echo APPPATH; ?>/themes/retail/static/local-common/images/logos/blizz-wow.png" alt="" /></a>
+<a href="http://blizzard.com/" tabindex="100"><img src="<?php echo ''.$path.'/'.APPPATH.'/themes/'.$theme.''; ?>/static/local-common/images/logos/blizz-wow.png" alt="" /></a>
 </div>
 <span class="clear"><!-- --></span>
 </div>

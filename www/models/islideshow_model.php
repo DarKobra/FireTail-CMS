@@ -18,10 +18,14 @@ class Islideshow_model extends CI_Model {
 	{
 		parent::__construct();
 	}
-	public function get_slides($limit)
+	public function get_slides()
 	{
-			$query = $this->db->query("SELECT * FROM `drak_index_slideshow` ORDER BY `id` DESC LIMIT ".$limit."");
+			$query = $this->db->query("SELECT * FROM `drak_index_slideshow` ORDER BY `id` DESC");
 			return $query->result_array();
+	}
+	public function get_num_slides()
+	{
+			return $this->db->count_all('drak_index_slideshow');
 	}
 	public function get_leader_slide()
 	{

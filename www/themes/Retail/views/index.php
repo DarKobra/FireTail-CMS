@@ -62,9 +62,8 @@ if (!defined('BASEPATH')) exit('No se permite el acceso a este script.');
         $(function() {
             Slideshow.initialize('#slideshow', [
 					<?php
-					$i=0;
+					$i = 0;
 					foreach ($islider as $islider_item):
-					$limit = $this->config->item('index_slides_limit');
 					echo sprintf('
 {
 image: "'.APPPATH.'themes/'.$theme.'/static/images/cms/carousel_header/'.$islider_item['banner'].'.jpg",
@@ -73,9 +72,11 @@ title: "'.$islider_item['title'].'",
 url: "'.$islider_item['link'].'",
 id: "'.$i.'"
 }');
-				if($i < $limit)
-				{echo',';}
-				$i++;
+$i++;
+if($i != $limit)
+{
+	echo ',';
+}
 endforeach;
 ?>
 ]);
@@ -107,6 +108,8 @@ endforeach;
 	$i = 1;
 	foreach ($news as $news_item): ?>
 	<?php
+	$ID = $news_item['id'];
+	$news_comments = $this->news_model->get_index_comments_on_news($ID);
 	if($i == 1){
    echo sprintf('<div class="news-article first-child">');
 	}else{
@@ -118,9 +121,9 @@ endforeach;
             </h3>
             <div class="by-line">
                 por <a href="'.$path.'/index.php/search/'.$news_item['author'].'">'.$news_item['author'].'</a>
-                <span class="spacer"></span> el "fecha" -> Under Dev
+                <span class="spacer"></span>, Fecha: '.$news_item['date'].'
                     <a href="'.$path.'/index.php/news/'.$news_item['id'].'#comments" class="comments-link">
-                    "N&uacute;mero de comentarios"
+                    '.$news_comments.'
                     </a>
             </div>
 
@@ -162,13 +165,6 @@ endforeach;
         </div>
 
 		<div id="right" class="ajax-update">
- 
-
-
-
-
-
-
 	<div id="sidebar-marketing" class="sidebar-module">
 	<div class="bnet-offer">
 		<!--  -->
@@ -189,18 +185,22 @@ endforeach;
 	<div class="sidebar-module " id="sidebar-expansion">
 			<div class="sidebar-title">
 	<h3 class="category title-expansion">
-	<a href="game/mists-of-pandaria/index.html">Temas Recientes</a>
+	<a href="game/mists-of-pandaria/index.html">&Uacute;ltimas Noticias</a>
 </h3>
 			</div>
 
 		<div class="sidebar-content">
-		Foros en desarrollo.
+		<?php
+		foreach($news as $news_item):
+		echo sprintf(''.$news_item['title'].'<br />Por: '.$news_item['author'].', el '.$news_item['date'].'<br />');
+		endforeach;
+		?>
 	</div>
 	</div>
 		<div class="sidebar-module " id="sidebar-expansion">
 			<div class="sidebar-title">
 	<h3 class="category title-expansion">
-	<a href="game/mists-of-pandaria/index.html">Ultimas Noticias</a>
+	<a href="game/mists-of-pandaria/index.html">Temas Recientes</a>
 </h3>
 			</div>
 

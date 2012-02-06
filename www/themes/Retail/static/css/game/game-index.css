@@ -10,7 +10,7 @@
 .index .panel .column { float: left; width: 285px; }
 .index .panel .box { margin: 20px 0; padding-top: 20px; border-top: 1px solid #321d0e; }
 .index .panel .box:first-child { border: 0; padding: 0; margin-top: 0; }
-.index .panel .box .header { margin-bottom: 5px; font-size: 18px; text-transform: uppercase; }
+.index .panel .box .header { margin-bottom: 5px; font-size: 18px; text-transform: uppercase; letter-spacing: -0.02em; }
 .index .panel .box .header a { color: #F5EBD1; }
 .index .panel .box .header a:hover { text-decoration: underline; }
 .index .panel .box .subcategory { color: #98542d; font-size: 16px; padding-bottom: 3px; }
@@ -23,7 +23,7 @@
 .index .panel .column .double a img,
 .index .panel .column .double a .icon-frame { vertical-align: bottom; margin-right: 5px; }
 
-a.beginners-guide { display: block; width: 270px; padding: 43px 15px 15px 15px; margin-top: 15px; border: 1px solid #372511; background: url("../../images/game/landing/thumb-beginners-guide.jpg") 0 0 no-repeat;
+a.beginners-guide { display: block; width: 270px; padding: 25px 15px 15px 15px; margin-top: 25px; border: 1px solid #372511; background: url("../../images/game/landing/thumb-beginners-guide.jpg") 0 0 no-repeat;
 	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
 	-moz-box-shadow: #0d0703 0 0 5px; -webkit-box-shadow: #0d0703 0 0 5px; box-shadow: #0d0703 0 0 5px; }
 a.beginners-guide:hover { border-color: #FFB100; background-position: 0 -200px; }

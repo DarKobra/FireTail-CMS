@@ -17,21 +17,22 @@ class News extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
+		$this->url = $this->config->item('base_url');
 		$this->load->model('islideshow_model');
 		$this->load->model('news_model');
 		$this->load->model('announces_model');
-		$title = $this->config->item('site_title');
-		$this->template->title($title);
-		$this->load->helper('date');
 	}
 
 	public function index()
 	{
+		$this->load->helper('date');
 		$this->load->helper("text");
-		$data['limit'] = $this->config->item('index_slides_limit');
-		$data['path'] = $this->config->item('base_url');
+		$data['path'] = $this->url;
+		$data['title'] = $this->config->item('site_title');
+		$this->template->title($data['title'], 'Inicio');
 		$data['server_name'] = $this->config->item('server_name');
 		$data['theme'] = $this->config->item('theme');
+		$data['pagina'] = 'homepage';
 	$this->template->prepend_metadata('
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 	<link rel="shortcut icon" href="'.$data['path'].'/'.APPPATH.'themes/'.$data['theme'].'/static/local-common/images/favicons/wow.ico" type="image/x-icon"/>
@@ -69,10 +70,11 @@ class News extends CI_Controller {
 	<meta name="title" content="World of Warcraft" />
 	<link rel="image_src" href="'.$data['path'].'/'.APPPATH.'themes/'.$data['theme'].'/static/images/icons/facebook/game.html" />
 	');
-		$data['islider'] = $this->islideshow_model->get_slides($data['limit']);
+		$data['islider'] = $this->islideshow_model->get_slides();
+		$data['limit'] = $this->islideshow_model->get_num_slides();
 		$data['leader_islider'] = $this->islideshow_model->get_leader_slide();
-		$data['news'] = $this->news_model->get_news();
 		$data['news_top'] = $this->news_model->get_top_min_news();
+		$data['news'] = $this->news_model->get_news();
 		$data['announce'] = $this->announces_model->announce();
 		$this->template->build('index', $data);
 	}

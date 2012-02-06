@@ -39,6 +39,11 @@ class News_model extends CI_Model {
 			return $query->result_array();
 	
 	}
+	public function get_index_comments_on_news($ID)
+	{
+		$query = $this->db->get_where('drak_news_comments', array('id_news' => $ID));
+		return $query->num_rows();
+	}
 	public function set_news()
 	{
 		$this->load->helper('url');
