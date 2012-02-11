@@ -182,36 +182,31 @@ endforeach;
                         <span class="buy-now-cart">Cuenta antibalas</span>
                     </a>
             </div>
-	<div class="sidebar-module " id="sidebar-expansion">
-			<div class="sidebar-title">
-	<h3 class="category title-expansion">
-	<a href="game/mists-of-pandaria/index.html">&Uacute;ltimas Noticias</a>
-</h3>
-			</div>
+<div class="sidebar" id="sidebar">
+			<div class="sidebar-top">
+				<div class="sidebar-bot">
+					<div class="sidebar-loading" id="sidebar-loading">
+						Los módulos de la barra lateral están cargando…
+					</div>
 
-		<div class="sidebar-content">
-		<?php
-		foreach($news as $news_item):
-		echo sprintf(''.$news_item['title'].'<br />Por: '.$news_item['author'].', el '.$news_item['date'].'<br />');
-		endforeach;
-		?>
-	</div>
-	</div>
-		<div class="sidebar-module " id="sidebar-expansion">
-			<div class="sidebar-title">
-	<h3 class="category title-expansion">
-	<a href="game/mists-of-pandaria/index.html">Temas Recientes</a>
-</h3>
+				</div>
 			</div>
-
-		<div class="sidebar-content">
-		Este sistema esta en desarrollo.
-	</div>
-	</div>
 		</div>
 
+        <script type="text/javascript">
+        //<![CDATA[
+			$(function() {
+				App.sidebar([
+						{ "type": "recent_articles", "query": "" },
+						{ "type": "forums", "query": "" }
+				]);
+			});
+        //]]>
+        </script>
+			</div>
+
 	<span class="clear"><!-- --></span>
-    </div>
+	</div>
 
 </div>
 </div>

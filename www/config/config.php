@@ -15,7 +15,6 @@ if (!defined('BASEPATH')) exit('No se permite el acceso a este script.');
 $config['base_url']	= ''; //URL del Sitio
 $config['site_title'] = '';
 $config['server_name'] = '';
-$config['index_slides_limit'] = 5;
 $config['index_page'] = 'index.php';
 $config['uri_protocol']	= 'AUTO';
 $config['url_suffix'] = '';

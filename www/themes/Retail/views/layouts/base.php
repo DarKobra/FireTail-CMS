@@ -25,32 +25,32 @@ if (!defined('BASEPATH')) exit('No se permite el acceso a este script.');
 <div class="header-plate">
 <ul class="menu" id="menu">
 <li class="menu-home">
-<a href="<?php echo $path; ?>" class="menu-active">
+<a href="<?php echo $path; ?>" <?php ($activo == "index") ? print "class=\"menu-active\"" : print ""; ?>>
 <span>Inicio</span>
 </a>
 </li>
 <li class="menu-game">
-<a href="<?php echo $path; ?>/index.php/server">
+<a href="<?php echo $path; ?>/index.php/server" <?php ($activo == "server") ? print "class=\"menu-active\"" : print ""; ?>>
 <span>Juego</span>
 </a>
 </li>
 <li class="menu-community">
-<a href="<?php echo $path; ?>/index.php/community">
+<a href="<?php echo $path; ?>/index.php/community" <?php ($activo == "community") ? print "class=\"menu-active\"" : print ""; ?>>
 <span>Comunidad</span>
 </a>
 </li>
 <li class="menu-media">
-<a href="<?php echo $path; ?>/index.php/media">
+<a href="<?php echo $path; ?>/index.php/media" <?php ($activo == "media") ? print "class=\"menu-active\"" : print ""; ?>>
 <span>Medios</span>
 </a>
 </li>
 <li class="menu-forums">
-<a href="<?php echo $path; ?>/index.php/forum">
+<a href="<?php echo $path; ?>/index.php/forum" <?php ($activo == "forum") ? print "class=\"menu-active\"" : print ""; ?>>
 <span>Foros</span>
 </a>
 </li>
 <li class="menu-services">
-<a href="<?php echo $path; ?>/index.php/services">
+<a href="<?php echo $path; ?>/index.php/services" <?php ($activo == "services") ? print "class=\"menu-active\"" : print ""; ?>>
 <span>Servicios</span>
 </a>
 </li>

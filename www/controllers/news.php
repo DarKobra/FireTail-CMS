@@ -17,6 +17,7 @@ class News extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
+		$this->activo = "index";
 		$this->url = $this->config->item('base_url');
 		$this->load->model('islideshow_model');
 		$this->load->model('news_model');
@@ -32,6 +33,7 @@ class News extends CI_Controller {
 		$this->template->title($data['title'], 'Inicio');
 		$data['server_name'] = $this->config->item('server_name');
 		$data['theme'] = $this->config->item('theme');
+		$data['activo'] = 'index';
 		$data['pagina'] = 'homepage';
 	$this->template->prepend_metadata('
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
@@ -62,11 +64,40 @@ class News extends CI_Controller {
 	<script type="text/javascript" src="'.$data['path'].'/'.APPPATH.'themes/'.$data['theme'].'/static/local-common/js/core.js?v37"></script>
 	<script type="text/javascript" src="'.$data['path'].'/'.APPPATH.'themes/'.$data['theme'].'/static/local-common/js/tooltip.js?v37"></script>
 	<!--[if IE 6]> <script type="text/javascript">
-	//<![CDATA[
-	try { document.execCommand(BackgroundImageCache, false, true) } catch(e) {}
-	//]]>
-	</script>
-	<![endif]-->
+//<![CDATA[
+try { document.execCommand(\'BackgroundImageCache\', false, true) } catch(e) {}
+//]]>
+</script>
+<![endif]-->
+<script type="text/javascript">
+//<![CDATA[
+Core.staticUrl = \''.$data['path'].'/'.APPPATH.'themes/'.$data['theme'].'/static\';
+Core.sharedStaticUrl= \''.$data['path'].'/'.APPPATH.'themes/'.$data['theme'].'/static/local-common\';
+Core.baseUrl = \''.$data['path'].'/index.php\';
+Core.projectUrl = \''.$data['path'].'\';
+Core.cdnUrl = \''.$data['path'].'/media\';
+Core.supportUrl = \''.$data['path'].'/index.php/support\';
+Core.secureSupportUrl= \''.$data['path'].'/index.php/support\';
+Core.project = \'wow\';
+Core.locale = \'es-mx\';
+Core.language = \'es\';
+Core.buildRegion = \'us\';
+Core.region = \'us\';
+Core.shortDateFormat= \'dd/MM/yyyy\';
+Core.dateTimeFormat = \'dd/MM/yyyy hh:mm a\';
+Core.loggedIn = false;
+Flash.videoPlayer = \'http://us.media.blizzard.com/global-video-player/themes/wow/video-player.swf\';
+Flash.videoBase = \'http://us.media.blizzard.com/wow/media/videos\';
+Flash.ratingImage = \'http://us.media.blizzard.com/global-video-player/ratings/wow/es-mx.jpg\';
+Flash.expressInstall= \'http://us.media.blizzard.com/global-video-player/expressInstall.swf\';
+var _gaq = _gaq || [];
+_gaq.push([\'_setAccount\', \'UA-544112-16\']);
+_gaq.push([\'_setDomainName\', \'.'.$data['path'].'\']);
+_gaq.push([\'_setAllowLinker\', true]);
+_gaq.push([\'_trackPageview\']);
+_gaq.push([\'_trackPageLoadTime\']);
+//]]>
+</script>
 	<meta name="title" content="World of Warcraft" />
 	<link rel="image_src" href="'.$data['path'].'/'.APPPATH.'themes/'.$data['theme'].'/static/images/icons/facebook/game.html" />
 	');

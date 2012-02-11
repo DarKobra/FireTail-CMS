@@ -17,6 +17,7 @@ class Server extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+		$this->activo = "server";
 		$this->url = $this->config->item('base_url');
 	}
 	public function index()
@@ -26,6 +27,7 @@ class Server extends CI_Controller {
 		$this->template->title($data['title'], 'Inicio');
 		$data['server_name'] = $this->config->item('server_name');
 		$data['theme'] = $this->config->item('theme');
+		$data['activo'] = 'server';
 		$data['pagina'] = 'game-index';
 		$this->load->model('announces_model');
 		$this->template->prepend_metadata('
