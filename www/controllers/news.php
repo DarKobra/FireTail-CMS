@@ -35,6 +35,13 @@ class News extends CI_Controller {
 		$data['theme'] = $this->config->item('theme');
 		$data['activo'] = 'index';
 		$data['pagina'] = 'homepage';
+		$loader = array(
+		0 => 'Los m&oacute;dulos de la barra lateral est&aacute;n cargando&hellip;',
+		1 => 'Cargando contenido&hellip;'
+		);
+		$loader_random = rand(0,1);
+		$data['loader'] = $loader[$loader_random];
+		###$recent_news_rand = rand(($ultimo_id - 5), $ultimo_id);###
 	$this->template->prepend_metadata('
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 	<link rel="shortcut icon" href="'.$data['path'].'/'.APPPATH.'themes/'.$data['theme'].'/static/local-common/images/favicons/wow.ico" type="image/x-icon"/>

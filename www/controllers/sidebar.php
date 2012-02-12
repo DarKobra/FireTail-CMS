@@ -18,6 +18,12 @@ class Sidebar extends CI_Controller {
 	{
 		parent::__construct();
 	}
+	public function sotd()
+	{
+		$this->load->model('news_model');
+		$data['news'] = $this->news_model->get_news();
+		$this->load->view('/sidebar/sotd', $data);
+	}
 	public function related_articles()
 	{
 		$this->load->model('news_model');

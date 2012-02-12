@@ -31,8 +31,8 @@ class CI_Form_validation {
 	protected $_config_rules		= array();
 	protected $_error_array			= array();
 	protected $_error_messages		= array();
-	protected $_error_prefix		= '<p>';
-	protected $_error_suffix		= '</p>';
+	protected $_error_prefix		= '<li>';
+	protected $_error_suffix		= '</li>';
 	protected $error_string			= '';
 	protected $_safe_form_data		= FALSE;
 

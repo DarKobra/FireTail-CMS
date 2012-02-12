@@ -12,11 +12,14 @@ if (!defined('BASEPATH')) exit('No se permite el acceso a este script.');
 *
 **********************************************************************************/
 ?>
-	<div class="sidebar-module " id="sidebar-forums">
-			<div class="sidebar-title">
-	<h3 class="category title-forums">						<a href="/wow/es/forum/">
 
-					Lo más visto en los Foros
+
+
+	<div class="sidebar-module " id="sidebar-recent-articles">
+			<div class="sidebar-title">
+	<h3 class="category title-recent-articles">						<a href="/wow/es/#news-updates">
+
+					Artículos recientes
 
 
 						</a>
@@ -26,137 +29,62 @@ if (!defined('BASEPATH')) exit('No se permite el acceso a este script.');
 
 		<div class="sidebar-content">
 
-		<ul class="trending-topics">
-					<li>
-						<a href="/wow/es/forum/topic/3312965778" class="topic">
-							[Opinión argumentada] Situación del PvP actual 
-						</a>
+		<ul class="articles-list">
 
-						<a href="/wow/es/forum/2265983/" class="forum">
-							Arenas y Campos de batalla puntuados
-						</a>
 
-						-
+				<li>
+					<a href="/wow/es/blog/4443602">
 
-						<span class="date">10/02/12 12:30</span>
-					</li>
-					<li>
-						<a href="/wow/es/forum/topic/3313035197" class="topic">
-							No a los full pvp en el LFR!!! 
-						</a>
+						<span class="title">Los autores más valiosos de los foros</span>
+						<span class="date">9/02/12 01:00 PM</span>
+						
+	<span class="clear"><!-- --></span>
+					</a>
+				</li>
 
-						<a href="/wow/es/forum/880014/" class="forum">
-							General
-						</a>
 
-						-
+				<li>
+					<a href="/wow/es/blog/4447477">
 
-						<span class="date">8/02/12 16:31</span>
-					</li>
-					<li>
-						<a href="/wow/es/forum/topic/3312965762" class="topic">
-							42 Años sin jugar al WOW. 
-						</a>
+						<span class="title">Nueva galería de capturas de pantalla transfiguradas</span>
+						<span class="date">9/02/12 11:30 AM</span>
+						
+	<span class="clear"><!-- --></span>
+					</a>
+				</li>
 
-						<a href="/wow/es/forum/2252230/" class="forum">
-							Películas, TV y Entretenimiento
-						</a>
 
-						-
+				<li>
+					<a href="/wow/es/blog/4447476">
 
-						<span class="date">10/02/12 11:42</span>
-					</li>
-					<li>
-						<a href="/wow/es/forum/topic/3313065260" class="topic">
-							Destino de nuestro querido World of Warcraft 
-						</a>
+						<span class="title">Nuevo Fan Art de Warcraft</span>
+						<span class="date">9/02/12 10:28 AM</span>
+						
+	<span class="clear"><!-- --></span>
+					</a>
+				</li>
 
-						<a href="/wow/es/forum/880014/" class="forum">
-							General
-						</a>
 
-						-
+				<li>
+					<a href="/wow/es/blog/4389641">
 
-						<span class="date">8/02/12 20:40</span>
-					</li>
-					<li>
-						<a href="/wow/es/forum/topic/3312964447" class="topic">
-							Buscando veteranos de verdad 
-						</a>
+						<span class="title">Parche 4.3.2 de World of Warcraft</span>
+						<span class="date">9/02/12 09:00 AM</span>
+						
+	<span class="clear"><!-- --></span>
+					</a>
+				</li>
 
-						<a href="/wow/es/forum/880014/" class="forum">
-							General
-						</a>
 
-						-
+				<li>
+					<a href="/wow/es/blog/4439758">
 
-						<span class="date">6/02/12 23:08</span>
-					</li>
-					<li>
-						<a href="/wow/es/forum/topic/3313065566" class="topic">
-							GZ Sublime ! 
-						</a>
-
-						<a href="/wow/es/forum/880014/" class="forum">
-							General
-						</a>
-
-						-
-
-						<span class="date">9/02/12 18:20</span>
-					</li>
-					<li>
-						<a href="/wow/es/forum/topic/3313134979" class="topic">
-							¡El Oráculo de Tirisfal ya es nivel 25! 
-						</a>
-
-						<a href="/wow/es/forum/940996/" class="forum">
-							Shen&#39;dralar
-						</a>
-
-						-
-
-						<span class="date">8/02/12 12:43</span>
-					</li>
-					<li>
-						<a href="/wow/es/forum/topic/3313035404" class="topic">
-							Un café con los desarrolladores - El rol del rol 
-						</a>
-
-						<a href="/wow/es/forum/880014/" class="forum">
-							General
-						</a>
-
-						-
-
-						<span class="date">9/02/12 1:57</span>
-					</li>
-					<li>
-						<a href="/wow/es/forum/topic/3312964340" class="topic">
-							Nerfeo del Dk = !@#$%^ total 
-						</a>
-
-						<a href="/wow/es/forum/2265983/" class="forum">
-							Arenas y Campos de batalla puntuados
-						</a>
-
-						-
-
-						<span class="date">6/02/12 18:25</span>
-					</li>
-					<li>
-						<a href="/wow/es/forum/topic/3313034215" class="topic">
-							mas inmortal que simba con capa 
-						</a>
-
-						<a href="/wow/es/forum/880014/" class="forum">
-							General
-						</a>
-
-						-
-
-						<span class="date">6/02/12 9:59</span>
-					</li>
+						<span class="title">Pláticas de garrafón: el rol del rol</span>
+						<span class="date">8/02/12 06:05 PM</span>
+						
+	<span class="clear"><!-- --></span>
+					</a>
+				</li>
 		</ul>
 
 		</div>

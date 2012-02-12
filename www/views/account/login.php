@@ -47,14 +47,23 @@ if (!defined('BASEPATH')) exit('No se permite el acceso a este script.');
 		<div id="embedded-login">
 			<h1>Battle.net</h1>
 	<?php echo form_open('account/login'); ?>
-	<?php echo validation_errors(); ?>
 	<?
+		if(validation_errors())
+		{
+			echo "<div id=\"errors\">
+			<ul>
+			<li>".validation_errors()."</li>
+		</ul>
+		</div>";
+		}
       if(isset($error)){
-         echo "<p>".$error."</p>";
+         echo "<div id=\"errors\">
+			<ul>
+			<li>".$error."</li>
+		</ul>
+		</div>";
       }
-      echo form_error('maillogin');
       ?>
-	<?php form_error('passwordlogin');?>
 		<a id="embedded-close" href="javascript:;" onClick="updateParent('close')"> </a>
 
 		<div>

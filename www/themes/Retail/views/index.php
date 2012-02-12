@@ -186,7 +186,7 @@ endforeach;
 			<div class="sidebar-top">
 				<div class="sidebar-bot">
 					<div class="sidebar-loading" id="sidebar-loading">
-						Los módulos de la barra lateral están cargando…
+						<?php echo $loader; ?>
 					</div>
 
 				</div>
@@ -197,7 +197,7 @@ endforeach;
         //<![CDATA[
 			$(function() {
 				App.sidebar([
-						{ "type": "recent_articles", "query": "" },
+						{ "type": "sotd", "query": "" },
 						{ "type": "forums", "query": "" }
 				]);
 			});

@@ -88,6 +88,7 @@ class Account extends CI_Controller {
                $this->load->view('account/login_success', $data);
             }
             else{
+				$data['username_empty_error']="Por favor, rellena el campo de nombre de usuario";
                $data['error']="E-mail o password incorrecta, por favor vuelva a intentar";
 			  $this->load->view('account/login', $data);
             }
