@@ -48,7 +48,7 @@ if (!defined('BASEPATH')) exit('No se permite el acceso a este script.');
 			<h1>Battle.net</h1>
 	<?php echo form_open('account/login'); ?>
 	<?
-		if(validation_errors())
+		if(validation_errors() == TRUE)
 		{
 			echo "<div id=\"errors\">
 			<ul>
