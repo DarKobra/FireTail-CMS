@@ -33,6 +33,13 @@ class News_model extends CI_Model {
 		}
 	
 	}
+	public function get_news_date($id)
+	{
+			$query = $this->db->query("SELECT * FROM `drak_news` ORDER BY `id` DESC LIMIT 5");
+			$query = $this->db->get_where('drak_news', array('id' => $id));
+			return $query->result_array();
+			
+		}
 	public function get_top_min_news()
 	{
 			$query = $this->db->query("SELECT * FROM `drak_news` ORDER BY `id` DESC LIMIT 4");

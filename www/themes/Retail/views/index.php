@@ -110,6 +110,7 @@ endforeach;
 	<?php
 	$ID = $news_item['id'];
 	$news_comments = $this->news_model->get_index_comments_on_news($ID);
+	$this->fecha = $this->relative_time->FechaRelativa($news_item['date']);
 	if($i == 1){
    echo sprintf('<div class="news-article first-child">');
 	}else{
@@ -121,7 +122,7 @@ endforeach;
             </h3>
             <div class="by-line">
                 por <a href="'.$path.'/index.php/search/'.$news_item['author'].'">'.$news_item['author'].'</a>
-                <span class="spacer"></span>, Fecha: '.$news_item['date'].'
+                <span class="spacer"></span>, '.$this->fecha.' y '.time().'
                     <a href="'.$path.'/index.php/news/'.$news_item['id'].'#comments" class="comments-link">
                     '.$news_comments.'
                     </a>
@@ -147,16 +148,6 @@ endforeach;
    $i++;
    endforeach ?>
 				<div class="blog-paging">
-							
-
-	<a class="ui-button button1 button1-next float-right " href="/index.php/news/page/2">
-		<span>
-			<span>Siguiente</span>
-		</span>
-	</a>
-
-
-
 	<span class="clear"><!-- --></span>
 					</div>
             </div>

@@ -13,11 +13,15 @@ if (!defined('BASEPATH')) exit('No se permite el acceso a este script.');
 **********************************************************************************/
 
 class News extends CI_Controller {
-
+	
+	//Seguridad, para que $data no salga de la Herencia.
+	private $data;
+	
 	function __construct()
 	{
 		parent::__construct();
 		$this->activo = "index";
+		$this->load->library('relative_time');
 		$this->url = $this->config->item('base_url');
 		$this->load->model('islideshow_model');
 		$this->load->model('news_model');
@@ -27,7 +31,7 @@ class News extends CI_Controller {
 	public function index()
 	{
 		$this->load->helper('date');
-		$this->load->helper("text");
+		$this->load->helper("text"); 
 		$data['path'] = $this->url;
 		$data['title'] = $this->config->item('site_title');
 		$this->template->title($data['title'], 'Inicio');
@@ -41,7 +45,6 @@ class News extends CI_Controller {
 		);
 		$loader_random = rand(0,1);
 		$data['loader'] = $loader[$loader_random];
-		###$recent_news_rand = rand(($ultimo_id - 5), $ultimo_id);###
 	$this->template->prepend_metadata('
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 	<link rel="shortcut icon" href="'.$data['path'].'/'.APPPATH.'themes/'.$data['theme'].'/static/local-common/images/favicons/wow.ico" type="image/x-icon"/>
