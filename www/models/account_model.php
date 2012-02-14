@@ -57,7 +57,13 @@ class Account_model extends CI_Model {
 	$this->db->insert('account', $register_info);
 	$this->db->insert('drak_users', $register_info_website);
 }
-	public function login($username, $password){
+	public function login_id($username){
+	  $query = $this->db->query("SELECT id FROM account");
+      $query = $this->db->where('username', $username);
+	  $query = $this->db->get('account');
+      return $query->row();
+   }
+   public function login($username, $password){
       $query = $this->db->where('username', $username);
       $query = $this->db->where('sha_pass_hash', $password);
 	  $query = $this->db->get('account');

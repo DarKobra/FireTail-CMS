@@ -38,7 +38,7 @@ class Relative_Time {
     } elseif ($dias >= 14 && $dias <= 365) {
         $fecha =  "hace " . intval($dias / 7) . " semanas";
     }  else {
-        $fecha = date("d-m-Y", $fechaAbsoluta);
+        $fecha = date("d/m/Y", $fechaAbsoluta);
     }
     return $fecha;
 }

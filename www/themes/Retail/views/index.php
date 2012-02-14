@@ -11,7 +11,7 @@ if (!defined('BASEPATH')) exit('No se permite el acceso a este script.');
 *		--------------------------------------------------------------------
 *
 **********************************************************************************/
-?><div id="content">
+		?><div id="content">
 <div class="content-top">
 <div class="content-bot">
 
@@ -122,7 +122,7 @@ endforeach;
             </h3>
             <div class="by-line">
                 por <a href="'.$path.'/index.php/search/'.$news_item['author'].'">'.$news_item['author'].'</a>
-                <span class="spacer"></span>, '.$this->fecha.' y '.time().'
+                <span class="spacer"></span> '.$this->fecha.'
                     <a href="'.$path.'/index.php/news/'.$news_item['id'].'#comments" class="comments-link">
                     '.$news_comments.'
                     </a>

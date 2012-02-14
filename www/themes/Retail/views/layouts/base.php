@@ -57,10 +57,21 @@ if (!defined('BASEPATH')) exit('No se permite el acceso a este script.');
 </ul>
 <div class="user-plate">
 <?php
+if($logged_in != TRUE)
 echo sprintf('<a href="?login" class="card-login"
-onclick="BnetAds.trackImpression(\'Battle.net Login\', \'Character Card\', \'New\'); return Login.open(\''.$path.'/index.php/account/login\');">');?>
+onclick="BnetAds.trackImpression(\'Battle.net Login\', \'Character Card\', \'New\'); return Login.open(\''.$path.'/index.php/account/login\');">
 ¡<strong>Inicia sesión</strong> para mejorar y personalizar tu experiencia!
-</a>
+</a>'); 
+else {
+echo sprintf('
+<div class="card-nochars">
+<div class="player-name">'.$username.'</div>
+No hay personajes disponibles.
+</div>
+<div class="card-overlay"></div>
+');
+}
+?>
 <div class="card-overlay"></div>
 </div>
 </div>
@@ -473,9 +484,16 @@ onclick="BnetAds.trackImpression(\'Battle.net Login\', \'Character Card\', \'New
 <div id="service">
 <ul class="service-bar">
 <li class="service-cell service-home"><?php echo sprintf('<a href="'.$path.'" tabindex="50" accesskey="1" title="'.$server_name.'">&nbsp;</a>'); ?></li>
-<li class="service-cell service-welcome">
-<a href="?login" onClick="return Login.open()">Inicia sesión</a> o <a href="<?php echo $path; ?>/index.php/account/register">Crea una cuenta</a>
-</li>
+<?php
+if($logged_in != TRUE)
+echo '<li class="service-cell service-welcome">
+<a href="?login" onClick="return Login.open()">Inicia sesión</a> o <a href="'.$path.'/index.php/account/register">Crea una cuenta</a>
+</li>';
+else
+echo '<li class="service-cell service-welcome">
+Bienvenido(a), '.$username.'
+ |  <a href="/index.php/account/logout" tabindex="50" accesskey="2">desconectar</a>
+</li>'; ?>
 <li class="service-cell service-account"><a href="<?php echo $path; ?>/index.php/account/management/" class="service-link" tabindex="50" accesskey="3">Cuenta</a></li>
 <li class="service-cell service-support service-support-enhanced">
 <a href="#support" class="service-link service-link-dropdown" tabindex="50" accesskey="4" id="support-link" onClick="return false" style="cursor: progress" rel="javascript">Asistencia<span class="no-support-tickets" id="support-ticket-count"></span></a>

@@ -33,6 +33,7 @@ class News extends CI_Controller {
 		$this->load->helper('date');
 		$this->load->helper("text"); 
 		$data['path'] = $this->url;
+		$this->load->model('userplate_model');
 		$data['title'] = $this->config->item('site_title');
 		$this->template->title($data['title'], 'Inicio');
 		$data['server_name'] = $this->config->item('server_name');
@@ -112,6 +113,8 @@ _gaq.push([\'_trackPageLoadTime\']);
 	<link rel="image_src" href="'.$data['path'].'/'.APPPATH.'themes/'.$data['theme'].'/static/images/icons/facebook/game.html" />
 	');
 		$data['islider'] = $this->islideshow_model->get_slides();
+		$data['logged_in'] = $this->session->userdata('logged_in');
+		$data['username'] = $this->session->userdata('username');
 		$data['limit'] = $this->islideshow_model->get_num_slides();
 		$data['leader_islider'] = $this->islideshow_model->get_leader_slide();
 		$data['news_top'] = $this->news_model->get_top_min_news();

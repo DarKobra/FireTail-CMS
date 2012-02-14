@@ -79,8 +79,10 @@ class Account extends CI_Controller {
             $this->load->model('account_model');
 			$password = $this->sha_hash->sha_password($this->input->post('username'), $this->input->post('password'));
             $Load_data = $this->account_model->login($this->input->post('username'), $password);
+            $id_data = $this->account_model->login_id($this->input->post('username'));
             if($Load_data){
 			   $login_data = array(
+			   	   'id' => $id_data,
                    'username'  => $this->input->post('username'),
                    'logged_in' => TRUE
                );
