@@ -29,7 +29,7 @@ class Islideshow_model extends CI_Model {
 	}
 	public function get_leader_slide()
 	{
-			$query = $this->db->query("SELECT * FROM `drak_index_slideshow` ORDER BY `id` ASC LIMIT 1");
+			$query = $this->db->query("SELECT * FROM `drak_index_slideshow` ORDER BY `id` DESC LIMIT 1");
 			return $query->result_array();
 	}
 }

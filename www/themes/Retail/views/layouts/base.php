@@ -63,13 +63,13 @@ onclick="BnetAds.trackImpression(\'Battle.net Login\', \'Character Card\', \'New
 ¡<strong>Inicia sesión</strong> para mejorar y personalizar tu experiencia!
 </a>'); 
 else {
-echo sprintf('
+echo '
 <div class="card-nochars">
 <div class="player-name">'.$username.'</div>
-No hay personajes disponibles.
+'.$logged_id.' No hay personajes disponibles.
 </div>
 <div class="card-overlay"></div>
-');
+';
 }
 ?>
 <div class="card-overlay"></div>

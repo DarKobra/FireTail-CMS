@@ -26,9 +26,18 @@ if (!defined('BASEPATH')) exit('No se permite el acceso a este script.');
 		<?php 
 		$i = 0;
 		foreach($islider as $islider_item):
-				echo sprintf('<div class="slide" id="slide-'.$i.'"
+				if($i === 0)
+				{
+					echo sprintf('<div class="slide" id="slide-'.$i.'"
 					style="background-image: url(\''.APPPATH.'themes/'.$theme.'/static/images/cms/carousel_header/'.$islider_item['banner'].'.jpg\'); ">
 				</div>');
+				}
+				if($i != 0)
+				{
+					echo sprintf('<div class="slide" id="slide-'.$i.'"
+					style="background-image: url(\''.APPPATH.'themes/'.$theme.'/static/images/cms/carousel_header/'.$islider_item['banner'].'.jpg\'); display: none; ">
+				</div>');
+				}
 		$i++; endforeach; ?>
 		</div>
 
@@ -195,7 +204,6 @@ endforeach;
         //]]>
         </script>
 			</div>
-
 	<span class="clear"><!-- --></span>
 	</div>
 
