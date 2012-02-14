@@ -64,7 +64,7 @@ CREATE TABLE `drak_users` (
   KEY `idx_gmlevel` (`level`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='Account System';
 
-DROP TABLE IF EXISTS `drak_reinos`;
+DROP TABLE IF EXISTS `drak_realms`;
 
 CREATE TABLE `drak_reinos` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
